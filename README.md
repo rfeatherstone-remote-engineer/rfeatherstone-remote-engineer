@@ -36,5 +36,5 @@ Platform & DevOps Engineer building declarative **AWS S3 compliance guardrails**
 * **Home-Lab-AA:** Headless Ubuntu 24.04 ARM64 virtualization & network fabric running on Apple M1 with `POSIX 100` cgroup isolation.
 
 ## Connect & Verification
-* **LinkedIn:** `://linkedin.com`
+* **LinkedIn:** `https://linkedin.com`
 * **Portfolio Status:** All 10 regulated S3 compliance repositories are **Public** with active CI badges and SPDX SBOM artifacts.
