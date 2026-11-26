@@ -1,40 +1,40 @@
-# 🔬 Ray Featherstone Sr.
+# Ray Featherstone Sr.
+**Junior Mid-Level Platform & DevOps Engineer | First-Principles SRE | AI Governance | DevOps Gold Standards**
+*Terraform HCL • Python Telemetry • Kubernetes • Cloud Guardrails (AWS)*
 
-### Modern Hybrid Engineer
+Platform & DevOps Engineer building declarative **AWS S3 compliance guardrails**, **zero-dependency Python 3.12 telemetry pipelines**, and **verifiable supply-chain provenance** (`SHA256SUMS` + `SPDX-2.3` SBOM) across **5 regulated industries**.
 
-Welcome to my engineering portfolio. I architect declarative infrastructure guardrails, self-healing Kubernetes platforms, and zero-dependency telemetry pipelines bridging local Linux environments and regulated cloud infrastructure (HealthTech, FinTech, EdTech, and GovTech). Core codebases are maintained as **Private** assets under administrative perimeter control—live architectural walkthroughs, CLI demonstrations, and full source reviews are available during technical interviews.
+## Enterprise AWS S3 Governance & Telemetry Suite (10 Public Labs)
 
----
+| Regulated Sector | Terraform Golden Path (IaC) | Python 3.12 Telemetry Lab | Compliance Framework |
+| :--- | :--- | :--- | :--- |
+| **Healthcare** | [hipaa-s3-golden-path](https://github.com/rfeatherstone-remote-engineer//hipaa-s3-golden-path) | [healthcare-s3-telemetry-lab](https://github.com/rfeatherstone-remote-engineer//healthcare-s3-telemetry-lab) | HIPAA / HITECH |
+| **FinTech** | [pci-s3-golden-path](https://github.com/rfeatherstone-remote-engineer//pci-s3-golden-path) | [fintech-s3-telemetry-lab](https://github.com/rfeatherstone-remote-engineer//fintech-s3-telemetry-lab) | PCI-DSS v4.0 |
+| **GovTech** | [fedramp-s3-golden-path](https://github.com/rfeatherstone-remote-engineer//fedramp-s3-golden-path) | [govtech-s3-telemetry-lab](https://github.com/rfeatherstone-remote-engineer//govtech-s3-telemetry-lab) | FedRAMP High / NIST 800-53 |
+| **Aerospace** | [itar-s3-golden-path](https://github.com/rfeatherstone-remote-engineer/itar-s3-golden-path) | [aerospace-s3-telemetry-lab](https://github.com/rfeatherstone-remote-engineer/aerospace-s3-telemetry-lab) | ITAR / CMMC Level 2 |
+| **AI/ML Gov** | [aiml-s3-golden-path-](https://github.com/rfeatherstone-remote-engineer/aiml-s3-golden-path-) | [aiml-s3-telemetry-lab](https://github.com/rfeatherstone-remote-engineer/aiml-s3-telemetry-lab) | NIST AI RMF / ISO 42001 |
 
-## 🏛 Core Infrastructure & Compliance Suite
+## Cross-Industry Governance & Provenance Architecture
 
-### 📂 1. hipaa-s3-golden-path (Self-Service Terraform Guardrail)
-* **Architectural Focus:** Reusable Infrastructure-as-Code module enforcing regulated storage safeguards (HIPAA § 164.312 baseline) for cloud application teams.
-* **Proven Footprint:** Enforces SSE-KMS encryption (CMK), 7-year (2,555-day) immutable object retention, 100% public access blocks, TLS-in-transit (`aws:SecureTransport`), and Anti-Click-Ops IAM policies.
-* **Telemetry Verification:** Gated by automated GitHub Actions CI pipelines executing `terraform fmt -check`, `terraform validate`, and `tfsec` static security analysis on every pull request.
+```text
++-----------------------------------------------------------------------+
 
-### 📂 2. healthcare-s3-telemetry-lab (Zero-Dependency PII/PHI & SRE Pipeline)
-* **Architectural Focus:** Low-footprint Python 3 observability, real-time sensitive data redaction (HIPAA Safe Harbor § 164.514(b)(2) / PII) over Unix pipes (`stdin -> stdout`), and bounded self-healing automation.
-* **Proven Footprint:** Built strictly on the Python 3 standard library (`/proc/meminfo` and stream processing) with zero third-party dependency overhead.
-* **Telemetry Verification:** Automates TTD/TTM and 99.9% SLO error-budget burn (`43.2 minutes/month`) reporting alongside a dry-run self-healer with a `300s` cooldown circuit breaker and immutable JSONL audit trail.
+| Terraform Golden Paths (5 Sectors)  | Python 3.12 Telemetry Labs (5)  |
+| - CMK KMS + 1825d WORM Object Lock  | - Zero-Dependency stdlib Audit  |
+| - ABAC + VPC Endpoint + Anti-ClickOps| - Chaos Fault & Drift Detection |
++-----------------------------------+-----------------------------------+
+                                    | GitHub Actions CI/CD
+                                    v
++-----------------------------------------------------------------------+
 
-### 📂 3. k3s-flux-chaos-labs (Flagship Resiliency Array)
-* **Architectural Focus:** Single-node edge orchestrator resiliency and automated declarative self-healing loops using K3s and FluxCD.
-* **Proven Footprint:** Hard physical execution ceiling limited to a strict 3.9 GiB RAM ARM64 node (`~580 MiB` K3s RSS with SQLite) to simulate hyper-dense constraints.
-* **Telemetry Verification:** 30 deterministic production degradation and state-drift chaos scenarios survived with automatic GitOps convergence in under 30 seconds without triggering the Linux OOM-killer.
+| Automated Supply-Chain Provenance (SHA256SUMS + SPDX-2.3 SBOM)        |
++-----------------------------------------------------------------------+
+```
 
-### 📂 4. gitops-incident-reports (Codified RCA & Telemetry Module)
-* **Architectural Focus:** Automation framework treating system logs, resource tuning adjustments, and post-mortem lifecycles (`GITOPS-CHAOS-REPORT.md`, `RESOURCE-FIX.md`) as version-controlled engineering assets.
-* **Proven Footprint:** Standardized runbook architecture mapping failure triggers directly to root-cause fixes across Docker, Terraform, and K3s layers.
-* **Telemetry Verification:** Automates structural drift ledgers and recovery validation directly from infrastructure state divergence triggers.
+## Platform & Homelab Engineering
+* **k3s-flux-chaos-labs & gitops-incident-reports:** Single-node K3s + FluxCD self-healing GitOps loops and automated RCA telemetry under strict 2.0 GiB ARM64 memory budgets.
+* **Home-Lab-AA:** Headless Ubuntu 24.04 ARM64 virtualization & network fabric running on Apple M1 with `POSIX 100` cgroup isolation.
 
-### 📂 5. Home-Lab-AA (Constrained ARM64 Virtualization & Network Fabric)
-* **Architectural Focus:** Headless Ubuntu 24.04.1 LTS (`aarch64`) provisioning via UTM, SSH (`ed25519`), and Nginx reverse proxy ingress (`8080:80`).
-* **Proven Footprint:** Stripped over 600 MB of idle daemon and `vscode-server` overhead, tuned `3.8 GiB` swap, and enforced POSIX `600` (`-rw-------`) permissions on `/etc/rancher/k3s/k3s.yaml`.
-* **Telemetry Verification:** Sustained stable multi-service execution (K3s + FluxCD + Docker + Python telemetry) beneath a 4GB host memory cap with zero OOM terminations.
-
----
-
-## 📜 Repository Access & Verification Notice
-
-All underlying source repositories are private engineering assets. Hiring managers and technical panels may request a live terminal walkthrough or guided code review via LinkedIn: (https://www.linkedin.com/in/remotecloudrfeatherstone/) or email (`featherstoneraymondsr@gmail.com`).
+## Connect & Verification
+* **LinkedIn:** `://linkedin.com`
+* **Portfolio Status:** All 10 regulated S3 compliance repositories are **Public** with active CI badges and SPDX SBOM artifacts.
