@@ -1,5 +1,5 @@
 # Ray Featherstone Sr.
-**Junior Mid-Level Platform & DevOps Engineer | First-Principles SRE | AI Governance | DevOps Gold Standards**
+**Modern Hybrid Engineer | First-Principles SRE | AI Governance | DevOps Gold Standards**
 *Terraform HCL • Python Telemetry • Kubernetes • Cloud Guardrails (AWS)*
 Platform & DevOps Engineer building declarative **AWS S3 compliance guardrails**, **zero-dependency Python 3.12 telemetry pipelines**, and **verifiable supply-chain provenance** (`SHA256SUMS` + `SPDX-2.3` SBOM) across **5 regulated industries**.
 
